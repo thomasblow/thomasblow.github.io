@@ -6,10 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    <title>Homepage</title>
+    <title>Bitcoin explorer</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="src/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -40,8 +38,8 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i> <span class="light">Thomas</span> Sucks
+                <a class="navbar-brand page-scroll" href="index.html">
+                    <i class="fa fa-play-circle"></i> <span class="light">Thomas</span> Blow
                 </a>
             </div>
 
@@ -53,13 +51,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">Home</a>
+                        <a class="page-scroll" href="index.html">Home</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                     <li> 
-                        <a class="" href="btc_explorer.html"> Bitcoin explorer </a>
+                        <a class="" href=""> Bitcoin explorer </a>
                     <li>
                 </ul>
             </div>
@@ -69,12 +67,12 @@
     </nav>
 
     <!-- Intro Header -->
-    <header class="intro">
+    <header class="intro" id="btcPage">
         <div class="intro-body">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Homepage</h1>
+                        <h1 class="brand-heading">Bitcoin explorer</h1>
                         <p class="intro-text">A free, responsive, one page Bootstrap theme.
                             <br>Created by Start Bootstrap.</p>
                         <a href="#about" class="btn btn-circle page-scroll">
@@ -87,33 +85,36 @@
     </header>
 
     <!-- About Section -->
-    <section id="about" class="container content-section text-center">
+    <div class="whiteSpace"> </div>
+    <section id="about" class="container content-section">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Grayscale</h2>
-                <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-                <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-                <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
-            </div>
-        </div>
-    </section>
+            <div class="col-lg-4 col-lg-offset-1">
+                <form id="btcForm"> <p> Block info </p> 
+                      <div class="form-group">
+                        <span class="col-sm-10">
+                            <label for="blockHeight"> Block height </label>
+                            <input type="email" class="form-control" id="blockHeight" aria-describedby="emailHelp" placeholder="Block Height/Hash">
+                        </span>
+                        <span class="col-sm-2" style="padding-top: 7%;">
+                            <button class="btn btn-primary">Submit</button>
+                        </span>
+                      </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Start Bootstrap</h2>
-                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
-                <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">LinkedIn</span></a>
-                    </li>
-                </ul>
+                      <div class="form-group">
+                        <div class="col-sm-10">
+                            <label for="blockHeight"> Address Height </label>
+                            <input type="email" class="form-control" id="blockHeight" aria-describedby="emailHelp" placeholder="Block Height/Hash">
+                        </div>
+                        <span class="col-sm-2" style="padding-top:7%;">
+                            <button class="btn btn-primary">Address hash info</button>
+                        </span>
+                      </div>
+                      
+                </form>
+            </div>
+            <div class="col-lg-4 col-lg-offset-2"> 
+                <h1> test </h1>
+
             </div>
         </div>
     </section>
