@@ -25,7 +25,7 @@ $('#getBlockHeight').click(function(){
 	    $.ajax(
 	    {
 	        type:'GET',
-	        url: 'http://api.blockcypher.com/v1/btc/main/blocks/' + content,
+	        url: 'https://api.blockcypher.com/v1/btc/main/blocks/' + content,
 
 	        success: function(response)
 	        {
@@ -55,7 +55,7 @@ $('#getBlockHeight').click(function(){
 		$.ajax( //block height
 	    {
 	        type:'GET',
-	        url: 'http://api.blockcypher.com/v1/btc/main/blocks/' + content,
+	        url: 'https://api.blockcypher.com/v1/btc/main/blocks/' + content,
 
 	        success: function(response)
 	        {
@@ -98,7 +98,7 @@ $('#getAddressInfo').click(function(){
 	$.ajax( 
 	    {
 	        type:'GET',
-	        url: 'http://api.blockcypher.com/v1/btc/main/addrs/' + content,
+	        url: 'https://api.blockcypher.com/v1/btc/main/addrs/' + content,
 
 	        success: function(response)
 	        {
