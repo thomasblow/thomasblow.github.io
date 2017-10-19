@@ -89,32 +89,34 @@
     <section id="about" class="container content-section">
         <div class="row">
             <div class="col-lg-4 col-lg-offset-1">
-                <form id="btcForm"> <p> Block info </p> 
+                <div id="btcForm"> <p> Block info </p> 
                       <div class="form-group">
+                      <!-- block height -->
                         <span class="col-sm-10">
                             <label for="blockHeight"> Block height </label>
-                            <input type="email" class="form-control" id="blockHeight" aria-describedby="emailHelp" placeholder="Block Height/Hash">
+                            <input class="form-control" id="blockHeight" aria-describedby="emailHelp" placeholder="Block Height/Hash">
                         </span>
                         <span class="col-sm-2" style="padding-top: 7%;">
-                            <button class="btn btn-primary">Submit</button>
+                            <button class="btn btn-primary" id="getBlockHeight">Block height</button>
                         </span>
                       </div>
 
+                      <!-- address info -->
                       <div class="form-group">
                         <div class="col-sm-10">
-                            <label for="blockHeight"> Address Height </label>
-                            <input type="email" class="form-control" id="blockHeight" aria-describedby="emailHelp" placeholder="Block Height/Hash">
+                            <label for="addressInfo"> Address Hash </label>
+                            <input type="email" class="form-control" id="addressInfo" aria-describedby="emailHelp" placeholder="Address Hash">
                         </div>
                         <span class="col-sm-2" style="padding-top:7%;">
-                            <button class="btn btn-primary">Address hash info</button>
+                            <button class="btn btn-primary" id="getAddressInfo">Address hash info</button>
                         </span>
                       </div>
                       
-                </form>
+                </div>
             </div>
-            <div class="col-lg-4 col-lg-offset-2"> 
-                <h1> test </h1>
-
+            <div class="col-lg-4 col-lg-offset-2" id="resultZone">
+                <h1> Results </h1>
+                <div id="results"> </div>
             </div>
         </div>
     </section>
@@ -140,6 +142,7 @@
 
     <!-- Theme JavaScript -->
     <script src="js/grayscale.js"></script>
+    <script src="js/app.js"></script>
 
 </body>
 
